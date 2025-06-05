@@ -28,7 +28,7 @@
         "cells": [
           {
             "position": {
-              "x": 320,
+              "x": 350,
               "y": 90
             },
             "size": {
@@ -144,7 +144,7 @@
           },
           {
             "position": {
-              "x": 720,
+              "x": 754,
               "y": 80
             },
             "size": {
@@ -310,10 +310,20 @@
             },
             "vertices": [
               {
-                "x": 680,
-                "y": 105
+                "x": 630,
+                "y": 80
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -360,8 +370,8 @@
             },
             "vertices": [
               {
-                "x": 590,
-                "y": 150
+                "x": 640,
+                "y": 160
               }
             ]
           },
@@ -401,13 +411,19 @@
             ],
             "id": "1d7c2f4f-0ac4-4c0c-ae0b-d8568faad0ea",
             "source": {
-              "x": 530,
-              "y": 280
+              "cell": "b664bf45-1600-475c-8768-91da8ed6b9e6",
+              "port": "00c4fabc-e33e-40ab-aa8e-b6ff0dcb4290"
             },
             "target": {
-              "x": 630,
-              "y": 380
-            }
+              "cell": "b42d07c3-e105-4d23-866e-e255f3ccad77",
+              "port": "1c8300e3-0bf8-4126-a0c2-8e5614ca90fa"
+            },
+            "vertices": [
+              {
+                "x": 620,
+                "y": 300
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -445,13 +461,19 @@
             ],
             "id": "d41de46b-ce5e-4627-999c-3ba1454d3d17",
             "source": {
-              "x": 521,
-              "y": 380
+              "cell": "b42d07c3-e105-4d23-866e-e255f3ccad77",
+              "port": "1c8300e3-0bf8-4126-a0c2-8e5614ca90fa"
             },
             "target": {
-              "x": 621,
-              "y": 480
-            }
+              "cell": "b664bf45-1600-475c-8768-91da8ed6b9e6",
+              "port": "00c4fabc-e33e-40ab-aa8e-b6ff0dcb4290"
+            },
+            "vertices": [
+              {
+                "x": 630,
+                "y": 360
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -489,13 +511,19 @@
             ],
             "id": "441cb09c-1862-488f-9996-4596e610c480",
             "source": {
-              "x": 159,
-              "y": 220
+              "cell": "a40a08ff-2473-43a3-821a-9db8af73f864",
+              "port": "2d98b628-7ced-4118-baaf-892d6bfde879"
             },
             "target": {
-              "x": 259,
-              "y": 320
-            }
+              "cell": "b664bf45-1600-475c-8768-91da8ed6b9e6",
+              "port": "e6315b3a-c87b-4878-803e-61fd8d1270ca"
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 260
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -533,17 +561,17 @@
             ],
             "id": "955853a7-ea01-4aef-86ae-09e7c110fcb1",
             "source": {
-              "x": 170,
-              "y": 340
+              "cell": "b664bf45-1600-475c-8768-91da8ed6b9e6",
+              "port": "e6315b3a-c87b-4878-803e-61fd8d1270ca"
             },
             "target": {
-              "x": 270,
-              "y": 440
+              "cell": "a40a08ff-2473-43a3-821a-9db8af73f864",
+              "port": "2d98b628-7ced-4118-baaf-892d6bfde879"
             },
             "vertices": [
               {
-                "x": 200,
-                "y": 340
+                "x": 240,
+                "y": 310
               }
             ]
           },
@@ -583,13 +611,19 @@
             ],
             "id": "a065facf-b70c-4156-b4dc-0bdd0bd49bc2",
             "source": {
-              "x": 310,
-              "y": 390
+              "cell": "b664bf45-1600-475c-8768-91da8ed6b9e6",
+              "port": "e6315b3a-c87b-4878-803e-61fd8d1270ca"
             },
             "target": {
-              "x": 410,
-              "y": 490
-            }
+              "cell": "a40a08ff-2473-43a3-821a-9db8af73f864",
+              "port": "2d98b628-7ced-4118-baaf-892d6bfde879"
+            },
+            "vertices": [
+              {
+                "x": 240,
+                "y": 350
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -627,18 +661,139 @@
             ],
             "id": "fc5ee4bb-f0c8-4859-8942-2c5cb142859b",
             "source": {
-              "x": 390,
-              "y": 410
+              "cell": "a40a08ff-2473-43a3-821a-9db8af73f864",
+              "port": "2d98b628-7ced-4118-baaf-892d6bfde879"
             },
             "target": {
-              "x": 490,
-              "y": 510
-            }
+              "cell": "b664bf45-1600-475c-8768-91da8ed6b9e6",
+              "port": "e6315b3a-c87b-4878-803e-61fd8d1270ca"
+            },
+            "vertices": [
+              {
+                "x": 230,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Verified",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Verified"
+            ],
+            "id": "e11e6a2a-aa8b-4452-b22f-f548508ff38c",
+            "source": {
+              "cell": "274c06b8-c964-4a16-adc8-a13c06601d46",
+              "port": "794a8ec7-0624-443e-8b5e-a1f601e0b54b"
+            },
+            "target": {
+              "cell": "b664bf45-1600-475c-8768-91da8ed6b9e6",
+              "port": "5013305e-53fe-4851-b2d8-1513e1a21a7d"
+            },
+            "vertices": [
+              {
+                "x": 370,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Auth Verification",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "7cec62b0-d324-4aa6-98bb-bca1521dc2df",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Someone impersonates a user",
+                  "mitigation": "",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ]
+            },
+            "labels": [
+              "Auth Verification"
+            ],
+            "id": "287159bc-0421-484d-8ad0-3791687a942c",
+            "source": {
+              "cell": "b664bf45-1600-475c-8768-91da8ed6b9e6",
+              "port": "5013305e-53fe-4851-b2d8-1513e1a21a7d"
+            },
+            "target": {
+              "cell": "274c06b8-c964-4a16-adc8-a13c06601d46",
+              "port": "794a8ec7-0624-443e-8b5e-a1f601e0b54b"
+            },
+            "vertices": [
+              {
+                "x": 490,
+                "y": 200
+              }
+            ]
           },
           {
             "position": {
-              "x": 360,
-              "y": 280.00000000000006
+              "x": 350,
+              "y": 280
             },
             "size": {
               "width": 130,
@@ -876,7 +1031,7 @@
           },
           {
             "position": {
-              "x": 21,
+              "x": -49,
               "y": 300
             },
             "size": {
@@ -993,6 +1148,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
