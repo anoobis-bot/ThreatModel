@@ -40,8 +40,8 @@
                 "text": "Authorization Provider"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -137,9 +137,23 @@
               "description": "Provides Authorization",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": true,
-              "threats": []
+              "threats": [
+                {
+                  "id": "3e681946-bb6b-45e4-bb31-3f27597cbc09",
+                  "title": "Elevation of Privileges",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker, who already has some level of access to a system, exploits vulnerabilities or misconfigurations to gain higher-level permissions, often administrative access",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -156,11 +170,13 @@
                 "text": "LDAP"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -256,13 +272,27 @@
               "description": "Stores information of the users",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": true,
               "isSigned": false,
               "storesCredentials": true,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "30f4f949-bd77-40d0-9f29-7169c8a183e5",
+                  "title": "Tampering with data using SQL injection attack",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "The data might be modified by unauthorizes users by using a SQL injection attack",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -313,17 +343,7 @@
                 "x": 630,
                 "y": 80
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -729,8 +749,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -750,31 +769,17 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "7cec62b0-d324-4aa6-98bb-bca1521dc2df",
-                  "title": "Spoofing",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Spoofing",
-                  "description": "Someone impersonates a user",
-                  "mitigation": "",
-                  "modelType": "default",
-                  "new": false,
-                  "number": 2,
-                  "score": ""
-                }
-              ]
+              "threats": []
             },
             "labels": [
               "Auth Verification"
             ],
-            "id": "287159bc-0421-484d-8ad0-3791687a942c",
+            "id": "6be91c08-78b6-409e-921d-7815ad3d6136",
             "source": {
               "cell": "b664bf45-1600-475c-8768-91da8ed6b9e6",
               "port": "5013305e-53fe-4851-b2d8-1513e1a21a7d"
@@ -785,14 +790,94 @@
             },
             "vertices": [
               {
-                "x": 490,
-                "y": 200
+                "x": 480,
+                "y": 220
               }
             ]
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Generic Trust Boundary"
+            ],
+            "id": "ab565adc-af14-48a4-92d0-5f7d15f5e195",
+            "source": {
+              "x": 710,
+              "y": 50
+            },
+            "target": {
+              "x": 710,
+              "y": 410
+            },
+            "vertices": []
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Generic Trust Boundary"
+            ],
+            "id": "358d9054-5ad8-46a0-9c48-306e4314d948",
+            "source": {
+              "x": 280,
+              "y": 60
+            },
+            "target": {
+              "x": 280,
+              "y": 420
+            },
+            "vertices": []
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Generic Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Generic Trust Boundary"
+            ],
+            "id": "174cdfd1-008e-4c24-844a-bf4852c9af9d",
+            "source": {
+              "x": 180,
+              "y": 170
+            },
+            "target": {
+              "x": 580,
+              "y": 170
+            }
+          },
+          {
             "position": {
-              "x": 350,
+              "x": 330,
               "y": 280
             },
             "size": {
@@ -804,8 +889,8 @@
                 "text": "Web Application"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -901,12 +986,26 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": true,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "987a67b2-092e-4127-8362-fc3645d20d76",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Someone impersonates a user",
+                  "mitigation": "The web application \nmay be spoofed by an \nattacker and this may \nlead to unauthorized \naccess to the browser \nclient. (When \ndiscussed with the \ndesign team, it \nappears that this is not \npossible, as a security \nmechanism to identify \nthe server is present.)  ",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -920,16 +1019,19 @@
             },
             "attrs": {
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1013,25 +1115,38 @@
               ]
             },
             "id": "b42d07c3-e105-4d23-866e-e255f3ccad77",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Store",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "c3344d1d-7ebe-45a9-b30f-f0fd3ee6b7fc",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "When someone impersonates another legitimate user",
+                  "mitigation": "The SQL Database \nmay be spoofed by an \nattacker, and this may \nlead to data being \nwritten to the attacker's \ntarget instead of the \nSQL Database. (When \ndiscussed with the \ndesign team, it \nappears that this is not \npossible, as SQL \nconnection is made \nusing the database \nusername and \npassword.) ",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ]
             }
           },
           {
             "position": {
-              "x": -49,
+              "x": -109,
               "y": 300
             },
             "size": {
@@ -1040,13 +1155,14 @@
             },
             "attrs": {
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1130,16 +1246,29 @@
               ]
             },
             "id": "a40a08ff-2473-43a3-821a-9db8af73f864",
-            "zIndex": 13,
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "7428c370-0757-4361-82b1-b39a59c99883",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Someone impersonates a user",
+                  "mitigation": "Someone impersonates a user",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ]
             }
           }
         ],
@@ -1148,6 +1277,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 7
   }
 }
